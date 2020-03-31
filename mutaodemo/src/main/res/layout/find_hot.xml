@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/describe"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:text="从广州区东莞仅需半个小时，美食美景统统都在等你！"
+        android:textSize="20sp"/>
+
+    <ImageView
+        android:id="@+id/portrait"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:background="@mipmap/find_hot_city"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="源自：羊城攻略"
+        android:layout_alignParentBottom="true"/>
+
+    <ImageView
+        android:id="@+id/zan_img"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:background="@mipmap/find_hot_yes"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/zan_num"
+        android:layout_marginRight="5dp" />
+
+    <TextView
+        android:id="@+id/zan_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/portrait"
+        android:layout_marginRight="12dp"
+        android:gravity="center"/>
+
+    <ImageView
+        android:id="@+id/see_img"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:background="@mipmap/find_hot_eye"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/see_num"
+        android:layout_marginRight="5dp" />
+
+    <TextView
+        android:id="@+id/see_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/zan_img"
+        android:layout_marginRight="12dp"
+        android:gravity="center"/>
+</RelativeLayout>

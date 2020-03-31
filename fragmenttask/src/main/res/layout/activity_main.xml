@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#515151"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <!-- android:button="@null"没有选择按钮的效果-->
+        <RadioButton
+            android:id="@+id/rb_index"
+            android:text="首页"
+            android:drawableTop="@drawable/tab_menu_index"
+            style="@style/tab_menu"/>
+
+        <RadioButton
+            android:id="@+id/rb_channel"
+            android:text="分类"
+            android:drawableTop="@drawable/tab_menu_channel"
+            style="@style/tab_menu"/>
+
+        <RadioButton
+            android:id="@+id/rb_list"
+            android:text="我的学习"
+            android:drawableTop="@drawable/tab_menu_list"
+            style="@style/tab_menu"/>
+
+        <RadioButton
+            android:id="@+id/rb_me"
+            android:text="我"
+            android:drawableTop="@drawable/tab_menu_me"
+            style="@style/tab_menu"/>
+
+
+        <!--selector选择器：可以根据控件的不同状态选择不同的效果-->
+
+    </RadioGroup>
+
+</LinearLayout>

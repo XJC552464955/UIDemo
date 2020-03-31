@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="380dp"
+    android:layout_height="350dp"
+    android:background="@mipmap/dialog_bg"
+    android:gravity="center_horizontal"
+    android:layout_gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="真的要要离开吗？"
+        android:textSize="25sp"
+        android:layout_marginTop="220dp"
+        android:textColor="#e61414"
+        android:textStyle="bold|italic"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/yes_btn"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/yes_btn"/>
+        <Button
+            android:id="@+id/no_btn"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/no_btn"
+            android:layout_marginLeft="20dp"/>
+    </LinearLayout>
+
+</LinearLayout>

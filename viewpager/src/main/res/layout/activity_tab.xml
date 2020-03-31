@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TabActivity"
+    android:orientation="vertical">
+
+    <!--
+        app:xTabTextColor 字体颜色
+        app:xTabTextSize 字体大小
+        app:xTabSelectedTextColor 选中时字体颜色
+        app:xTabSelectedTextSize 选中时字体大小
+        app:xTabMode 更改模式 scrollable 滑动
+    -->
+    <com.androidkun.xtablayout.XTabLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:xTabTextColor="#cccccc"
+        app:xTabTextSize="15sp"
+        app:xTabSelectedTextSize="20sp"
+        app:xTabSelectedTextColor="#ff0000"
+        app:xTabMode="scrollable"
+        />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/pagers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"/>
+</LinearLayout>

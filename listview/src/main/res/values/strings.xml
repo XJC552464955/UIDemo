@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ListView</string>
+
+    <string-array name="date">
+        <item>Aa</item>
+        <item>Bb</item>
+        <item>Cc</item>
+        <item>Dd</item>
+        <item>Ee</item>
+        <item>Ff</item>
+        <item>Gg</item>
+        <item>Hh</item>
+        <item>Ii</item>
+        <item>Jj</item>
+        <item>Kk</item>
+        <item>Ll</item>
+        <item>Mm</item>
+        <item>Nn</item>
+        <item>Oo</item>
+        <item>Pp</item>
+    </string-array>
+</resources>

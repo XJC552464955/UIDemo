@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+    android:background="#cccccc">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/pagers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+            <!--左-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="left">
+                <ImageView
+                    android:id="@+id/Sweeping"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@mipmap/main_scan"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="扫一扫"
+                    android:textColor="#ffffff"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <!--中-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#B7A5A5A5">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/search"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:hint="目的地/景点/酒店/门票"
+                    android:background="@null"
+                    android:textColor="#FFFFFF"/>
+            </LinearLayout>
+
+            <!--右-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="right">
+                <ImageView
+                    android:id="@+id/news"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@mipmap/news"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="信息"
+                    android:textColor="#ffffff"
+                    android:gravity="center"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pointers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="8dp"
+                android:src="@drawable/dot_selected"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="8dp"
+                android:src="@drawable/dot_unselected"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="8dp"
+                android:src="@drawable/dot_unselected"
+                android:layout_marginRight="2dp"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="8dp"
+                android:src="@drawable/dot_unselected"/>
+        </LinearLayout>
+</FrameLayout>

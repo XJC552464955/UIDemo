@@ -1,0 +1,2 @@
+include ':app', ':myapplication', ':activitylife', ':fragmenttest', ':fragmenttask', ':listview', ':viewpager', ':mutaodemo', ':citylistdemo'
+rootProject.name='UIDemo'
